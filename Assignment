@@ -1,0 +1,54 @@
+# Snake rules:
+# -the snake grows every time it collects food
+# -every time snake collects food, food has to move to a new position
+# -when the snake collides with itself the game is over 
+# -when the snake collides with the boarder of the screen the game is over
+# At the very beginning, the snake is one unit long and as it goes collecting food it starts getting longer. One piece of food is one more unit of length added to the snake.
+# The player should be able to set the direction in which the snake is going by pressing the arrow keys on the keyboard.
+# The game is over once the snake either collides with itself or the boarder of the screen. 
+# The game then restarts again with a one unit long snake.
+
+#first we have to set up the screen
+def set_up_screen(width, height):
+  ''' 
+  return the dimesions of the board on which the game will be played
+  '''
+  pass 
+
+#then, we have to create the initial snake
+def initial_snake(height, row, column)->int, bool:
+  '''
+  return the height of the snake and return true iff the position of the snake is valid which is inside the boarders
+  '''
+  pass
+
+#now, we can create the food piece
+def food(row, column)-> bool:
+  '''
+  return true iff the position of the food is valid, which is inside the boarders and not at the same position as the snake
+  '''
+  pass
+
+def valid_move(direction)-> bool:
+  '''
+  return true iff the move is valid, which is if the snake moves to either a free space or a space with food. Else print "Game Over"
+  '''
+  pass
+
+def new_food(row, column)-> bool:
+  '''
+  after food gets eaten, new food has to appear at a different position than the previous one. Return true iff the position of new food   is valid, which is it's not at the same position as the snake and it's not out of borders
+  ''' 
+  pass
+
+def grow_snake:
+  '''
+  return an initial snake with one more segment added to it when snake eats food
+  '''
+  pass
+  
+def new_game:
+  '''
+  when the snake collides with either itself or the boarder print "Game Over" and restart the game again with initial_snake
+  '''
+  pass
